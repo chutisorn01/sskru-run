@@ -8,9 +8,24 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\View\View;
+use App\Models\Profile;
 
 class ProfileController extends Controller
 {
+
+    public function store(Request $request)
+    {
+    //
+    $Profile = New Profile();
+    $Profile ->name = $request->name;
+    $Profile ->age = $request->age;
+    // $Profile ->phone = $request->phone;
+    $Profile ->save();
+    return $Profile;
+
+    }
+
+
     /**
      * Display the user's profile form.
      */

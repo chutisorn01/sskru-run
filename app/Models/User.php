@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+
+use App\Models\Run;
+
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
@@ -45,4 +48,14 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function run()
+    {
+        return $this->hasMany(Run::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(Run::class);
+    }
+
 }

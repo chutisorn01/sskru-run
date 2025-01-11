@@ -1,0 +1,1044 @@
+/* rasponsive wed design to smart phone */
+/*-------------------------------------login------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.add-info-btn {
+    display: block;
+    width: 90vh;
+    padding: 15px;
+    background-color: #BE35FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2%;
+    
+    
+}
+
+
+body {
+    /*background-image: linear-gradient(to top, #eaa6f6, #fde198);*/
+    background: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+
+}
+.login-btn{
+    margin-top: 15px;
+    font-size: 10px;
+    background-color: #BE35FF;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+.login-container {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+  
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    padding:40px;
+    padding-top: 30px ;
+    padding-bottom:30px ;
+    box-shadow: 1 4px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    color: #BE35FF;
+    margin-bottom: 5px;
+}
+
+.title .highlight {
+    color: #D79F26;
+    font-weight: bold;
+}
+.highlight2 {
+    color: #000000;
+    font-size: 15px;
+  
+}
+form {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-size: 10px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a0dad;
+}
+
+
+
+button {
+    margin-top: 15px;
+    font-size: 10px;
+    background-color: #BE35FF;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#6a0dad;
+}
+
+.forgot-password {
+    text-align: right;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.create-account {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+  /*----------------------------------------homepage-------------------------------------*/
+  header {
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 27px  ;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: top;
+}
+
+.user-icon {   /*ไอคอนนนนนนนนนนนด้านบน*/
+    width: 2px;
+   padding-right: 15px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.username {
+    font-size: 12px ;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.stats {
+    font-size: 12px ;
+    color: #BE35FF;
+    padding: 2px;
+}
+.stats2 {/*วิ่งระยะทางรวมมมมมมมมมมมมม*/
+    font-size: 12px ;
+    color: #D79F26;
+    padding:0px;
+}
+.hello{
+    font-size: 15px;
+    padding: 3px;
+}
+.name{
+    font-size: 12px;
+    padding: 3px;
+}
+
+.logo {
+    font-size: 20px;
+    color: #BE35FF;
+    font-weight: bold;
+}
+
+
+.logo span {
+    font-size: 20px;
+    color: #D79F26;
+}
+
+main {  
+  margin-top: 30px;
+  padding-top: 170px;
+  padding-bottom: 80px;
+   
+}
+@media (min-width:100px) and (max-width:375px){ 
+    main {  
+    padding-top: 260px;
+    padding-bottom: 90px;
+  }
+}
+
+.post {
+    margin: 0px;
+    background-color: #ffffff; 
+    margin-bottom: 5px;
+    padding: 4px;
+    padding-bottom: 4px;
+    padding-top:4px ;
+    padding-right: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);  
+    
+}
+
+.post-image { 
+    width: 40vh;
+    height: 20vh;
+    background-color: #ccc;
+    margin-bottom: 5px;
+    
+}
+.name-event{
+    font-size: 15px;
+    margin: 1px;
+    
+}
+.details{
+   margin: 2px;
+    font-size: 10px;
+    color: #4f4f4f;
+}
+
+/*พื้นที่ด้านล่าง............................................footer*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-item {
+    font-size: 12px;
+    text-align: center;
+    color: #444;
+}
+
+.nav-item img {
+    width: 20px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.nav-item.active {
+    
+    text-decoration: none;
+}
+.nav a {
+    
+    text-decoration: none;
+}
+/*----------------------------------------profilesmartphone-------------------------------------*/
+
+@media (min-width:100px) and (max-width:375px){ 
+    .main-event1{
+        margin-top: 300px;
+        padding-bottom: 10px;
+    }
+
+  
+    
+}
+.informationprofile{
+   padding: 5px;
+    text-align: center;
+   
+}
+.main-event1{
+    padding-top: 250px;
+    padding-bottom: 100px;
+}
+.progress1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+.circle-active{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+    border: 3px solid #BE35FF;
+}
+.circle-active2{
+    width: 130px;
+    height: 130px;
+    border-radius: 30%;
+    background-color: #908f8f;
+    margin: 0 10px;
+}
+.profile-dropdown {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.grad-dropdown {
+    
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.grad-image{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40vh;
+    height: 20vh;
+    background-color: #e7e7e7;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+/*----------------------------------------eventsmartphone-------------------------------------*/
+.event-dropdown {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.main-event{
+        margin-left:0px;
+        padding-top:10px;
+        padding-bottom: 100px;
+}
+.map-image {
+    margin: 0;
+    width: 40vh;
+    height: 20vh;
+    background-color: #ccc;
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 20px;
+    
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+}
+
+.circle.active {
+    background-color:  #BE35FF;;
+}
+
+.info-box {
+    width: 40vh;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.add-info-btn {
+    display: block;
+    width: 40vh;
+    padding: 15px;
+    background-color: #BE35FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+/*----------------------------------------information-------------------------------------*/
+
+.information{
+    padding-top: 100px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.info-form {
+
+    background-color: #EEEEEE;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.info-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-form input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius:5px;
+    border: 1px solid #ccc;
+}
+
+.upload-btn {
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .submit-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #BE35FF;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #BE35FF;
+    color: #fff;
+}
+/* ---------------------------------rank--------------------------------*/
+.information1{
+    text-align: center;
+    margin-top: -23rem;
+    
+}
+@media (min-width:100px) and (max-width:375px){ 
+    .information1{
+        text-align: center;
+        margin-top: -10rem;
+    }
+
+  
+    
+}
+.Hsmartphone{
+    font-size: 25px;
+}
+.prorank{   
+    width: 90px;
+    height: 25px;
+    background-color:#E4ABFF;
+    font-size:12px;
+  
+ }
+.rank{
+    background-color: #D0D0D0;
+    width: 90px;
+    height: 20px;
+    font-size: 9px;
+}
+
+
+/* rasponsive wed design to Desktop and othor */
+/*---------------------------------------login------------------------------------------------------*/
+
+@media (min-width:481px) 
+{
+   
+    body{
+        background: rgb(255, 255, 255);
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+    }
+    
+    .login-btn {
+        margin-top: 15px;
+        font-size: 10px;
+        background-color: #BE35FF;
+        color: white;
+        padding: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .login-box {
+        background-color: #EEEEEE;
+        border-radius: 10px;
+        padding:60px;
+        padding-top: 40px ;
+        padding-bottom: 40px ;
+        box-shadow: 1 4px 4px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 40px;
+        color: #BE35FF;
+        margin-bottom: 10px;
+    }
+    
+    .title .highlight {
+        color: #D79F26;
+        font-weight: bold;
+    }
+    .highlight2 {
+        color: #000000;
+        font-size: 20px;
+       
+    }
+  
+     
+    form {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        text-align: left;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    input:focus {
+        outline: none;
+        border-color:#6a0dad ;
+    }
+    
+    button {
+        margin-top: 15px;
+        font-size: 15px;
+        background-color: #BE35FF;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #6a0dad;
+    }
+    
+    .forgot-password {
+        text-align: right;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 12px;
+        color: #6a0dad;
+        text-decoration: none;
+    }
+    
+    .forgot-password:hover {
+        text-decoration: underline;
+    }
+    
+    .create-account {
+        
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #6a0dad;
+        text-decoration: none;
+    }
+    
+    .create-account:hover {
+        text-decoration: underline;
+    }    
+    /*----------------------------------------homepage-------------------------------------*/
+    header {
+        top: 0;
+        margin: center;
+        position: fixed ;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 30px  ;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile {
+        display: flex;
+        align-items: top;
+    }
+    
+    .user-icon {
+      
+        width: 30px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 0px;
+    }
+    
+    .user-details {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .username {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .stats {
+        font-size: 20px ;
+        color: #BE35FF;
+        padding: 3px;
+
+    }
+    .stats2 {/*วิ่งระยะทางรวมมมมมมมมมมมมม*/
+        font-size: 20px ;
+        color: #D79F26;
+        padding:0px;}
+
+    .hello{
+        font-size: 25px;
+    }
+    .name{
+        font-size: 20px;
+        padding: 3px;
+    }
+    
+    .logo {
+        margin-top: 0%;
+        font-size: 40px;
+        color: #BE35FF;
+        font-weight: bold;
+    }
+    
+    
+    .logo span {
+        font-size: 40px;
+        color: #D79F26;
+    }
+    .menu-icon img {
+        width: 10px;
+    }
+    
+    main { 
+        padding-top: 1100px;
+        padding-bottom: 100px;
+    }
+    
+    .post {
+        
+        
+        background-color: #ffffff; 
+        margin-bottom: 10px;
+        padding: 5px ;
+        padding-bottom: px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);  
+    }
+ 
+    .post-image {
+        width: 90vh;
+        height: 45vh;
+        background-color: #ccc;
+        margin-bottom: 15px;
+    }
+    .name-event{
+        margin: 2px;
+        font-size: 20px;
+        
+
+    }
+    .details{
+        margin: 2px;
+        font-size: 15px;
+        color: #4f4f4f;
+        
+    }
+
+    .map-image {
+    width: 100%;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 200px;
+    color: #888;
+    font-size: 24px;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.circle.active {
+    background-color: #BE35FF;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.add-info-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #BE35FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*----------------------------------------event-------------------------------------*/
+
+.event-dropdown {
+    width: 90%;
+    padding: 10px;
+    margin: 45px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+     
+}
+
+
+.main-event{
+        margin: 0px;
+        padding-top:300px;
+        padding-bottom: 100px;
+}
+.map-image {
+
+    width: 100vh;
+    height: 50vh;
+    background-color: #ccc;
+    border-radius: 0px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 300px;
+    color: #888;
+    font-size: 50px;
+    
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 40px;
+}
+
+.circle.active {
+    background-color:  #BE35FF;;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    padding:10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width:100vh;
+}
+
+.add-info-btn {
+    
+    display: block;
+    width: 90vh;
+    padding: 15px;
+    background-color: #BE35FF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin: 0 auto; 
+    
+}
+
+
+
+
+/*----------------------------------------information-------------------------------------*/
+
+.information{
+    margin-top: 150px;
+    padding: 10px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.info-form {
+    background-color:  #EEEEEE;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.info-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.upload-btn {
+    cursor: pointer;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel-btn, .submit-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #BE35FF;
+    color: #fff;
+}
+
+.submit-btn {
+    background-color: #BE35FF;
+    color: #fff;
+}
+
+/*----------------------------------------profile-------------------------------------*/
+
+
+.informationprofile{
+    padding: 5px;
+     text-align: center;
+    
+ }
+ .main-event1{
+     margin-top: 450px;
+    margin-bottom: 50px;
+ }
+ .progress1{
+     margin-top: 20px;
+     margin-bottom: 30px;
+     display: flex;
+     justify-content: center;
+ 
+ }
+ .circle-active{
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     background-color: #ccc;
+     margin: 0 10px;
+      border: 3px solid #BE35FF;
+ }
+ .circle-active2{
+     width: 200px;
+     height: 200px;
+     border-radius: 30%;
+     background-color: #908f8f;
+     margin: 0 10px;
+ }
+ .profile-dropdown {
+     text-align: center;
+     width: 100%;
+     padding: 10px;
+     margin: 20px 0;
+     border-radius: 10px;
+     border: 1px solid #ccc;
+ }
+ .grad-dropdown {
+     
+     text-align: center;
+     width: 100%;
+     padding: 10px;
+     margin: 10px 0;
+     border-radius: 10px;
+     border: 1px solid #ccc;
+ }
+ .grad-image{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     width: 90vh;
+     height: 45vh;
+     background-color: #e7e7e7;
+     justify-content: center;
+     text-align: center;
+ }
+ /* ---------------------------------rank--------------------------------*/
+ .prorank{  
+    text-align: center; 
+    width: 200px;
+    height: 50px;
+    background-color:#E4ABFF;
+    font-size: 30px;
+  
+ }
+.rank{
+    background-color: #D0D0D0;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+}
+.information1{
+    text-align: center;
+    margin-top: -40rem;
+    
+}
+.Hsmartphone{
+    font-size: 49px;
+}
+}
+
+
+
+
+
+
+   
