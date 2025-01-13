@@ -39,8 +39,8 @@ Route::get('/admin_add_event', function () {
     return view('admin_add_event');
 })->name('button.admin_add_event');
 
-Route::get('/adminevent', function () {
-    return view('adminevent');
+Route::get('/admin_index', function () {
+    return view('admin_index');
 })->name('button.adminevent');
 
 Route::get('/event', function () {
@@ -59,6 +59,13 @@ Route::get('/forgot_password', function () {
     return view('forgot_password');
 });
 
+Route::get('/admin_edit', function () {
+    return view('admin_edit');
+});
+
+Route::get('/admin_rank', function () {
+    return view('admin_rank');
+});
 
 Route::get('/profile', function () {
     return view('profile');
@@ -71,6 +78,11 @@ Route::get('/rank', function () {
 Route::get('/test', function () {
     return view('test');
 })->name('button.rank');
+
+Route::get('/admin_profile', function () {
+    return view('admin_profile');
+});
+
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
