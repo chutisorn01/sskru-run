@@ -11,7 +11,8 @@
       <div class= "text-center " ><span class=" text-4xl text-purple-700 font-bold ">SSKRU <span class="text-4xl text-yellow-500 font-bold">RUN</span></span></div>
         <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
 
-        <form action="#" method="POST">
+        <form action="{{ route('login_sskrurun')}}" method="POST">
+            @csrf
             <!-- Username -->
             <div class="mb-4">
                 <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
@@ -46,9 +47,10 @@
                 <button 
                     type="submit" 
                     class="w-full bg-purple-700 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                   <a href='{{asset("index")}}'>
+                   <!-- <a href='{{asset("index")}}'> -->
                     Login
-                    </a>
+                    <!-- </a> -->
+                    
                 </button>
             </div>
         </form>

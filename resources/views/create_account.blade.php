@@ -11,7 +11,8 @@
       <div class= "text-center " ><span class=" text-4xl text-purple-700 font-bold ">SSKRU <span class="text-4xl text-yellow-500 font-bold">RUN</span></span></div>
         <h2 class="text-2xl font-bold mb-6 text-center">Create Account</h2>
 
-        <form action="#" method="POST">
+        <form action="{{route('create_account_sskrurun')}}" method="POST">
+          @csrf
             <!-- Username -->
             <div class="mb-4"> 
                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
@@ -56,8 +57,8 @@
         
               <!-- Upload Image -->
               <div class="mb-4">
-                <label for="profile_picture" class="block text-sm font-medium text-gray-700">Profile Picture</label>
-                <input type="file" id="profile_picture" name="profile_picture" class="mt-1 block w-full text-gray-500 sm:text-sm">
+                <label for="profilepic" class="block text-sm font-medium text-gray-700">Profile Picture</label>
+                <input type="file" id="profilepic" name="profilepic" class="mt-1 block w-full text-gray-500 sm:text-sm">
               </div>
 
             
@@ -66,9 +67,9 @@
                 <button        
                     type="submit" 
                     class="w-full bg-purple-700 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    <a href='{{asset("loginsskrurun")}}'>
+                    <!-- <a href='{{asset("loginsskrurun")}}'> -->
                     Submit
-                    </a>
+                    <!-- </a> -->
                 </button>
             </div>
         </form>

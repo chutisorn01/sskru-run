@@ -13,7 +13,7 @@
     <div class="bg-white text-black p-4 pt-8 flex justify-between items-center fixed top-0 left-0 w-full z-10 shadow-md ">
       <div>
         <p class="text-xs">User: 001</p>
-        <h1 class="text-lg font-bold">สวัสดี <span class=" text-sm text-black">Chutisorn Suttapan</span></h1>
+        <h1 class="text-lg font-bold">สวัสดี <span class=" text-sm text-black">{{ Session::get('name')}}</span></h1>
         <p class="text-sm text-purple-700">วิ่งระยะทางรวม <span class="text-yellow-500">1,000</span><span class="text-purple-700"> กิโลเมตร!</span></p>
       </div>
       <div class= "" ><span class=" text-xl text-purple-700 font-bold ">SSKRU <span class="text-xl text-yellow-500 font-bold">RUN</span></span></div>

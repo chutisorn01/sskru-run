@@ -9,14 +9,14 @@
         <!-- รูปโปรไฟล์ -->
          <div class="flex justify-center">
           <img 
-        src="img/jan_au.jpg"
+        src="{{ Session::get('profilepic')}}"
         alt="Profile Picture" 
         class="w-40 h-40 rounded-full border-2 border-purple-700 shadow-lg"
         >
          </div>
           <!-- ชื่อ -->
         <div class="text-center mt-4">
-         <h1 class="text-2xl font-bold text-gray-800">John Doe</h1>
+         <h1 class="text-2xl font-bold text-gray-800">{{ Session::get('name')}}</h1>
          <!-- ไอดี -->
         <p class="text-sm text-gray-500">@user:001</p>
         </div>

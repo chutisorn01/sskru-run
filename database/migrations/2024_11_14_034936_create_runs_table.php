@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('runs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->integer('user_id');
             $table->float('distance');
-            $table->integer('duration');
-            $table->float('heartrate');
-            $table->float('weight');
+            $table->time('time');
+            $table->date('date');
+            $table->integer('hr');
+
             $table->timestamps();
         });
     }

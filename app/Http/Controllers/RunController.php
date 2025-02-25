@@ -12,7 +12,9 @@ class RunController extends Controller
      */
     public function index()
     {
-        //
+        $run = Run::where('user_id',Session('id'))->get();
+        dd($run);
+        return $run;  
     }
 
     /**
@@ -28,7 +30,18 @@ class RunController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     
+    $run = New Run();
+    $run ->user_id = Session('id');
+    $run ->distance = $request->distance;
+    $run ->time = $request->time;
+    $run ->date = $request->date;
+    $run ->hr = $request->hr;
+   
+    $run ->save();
+    return redirect() ->intended(route('button.index'));
+
+        
     }
 
     /**
@@ -36,7 +49,8 @@ class RunController extends Controller
      */
     public function show(Run $run)
     {
-        //
+        $run = Run::where('user_id',Session('id'));
+        return $run;
     }
 
     /**

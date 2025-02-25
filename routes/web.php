@@ -1,7 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RunController;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Profile;
@@ -18,16 +19,24 @@ use App\Models\Profile;
 
 // });
 
-// Route::post('/profile/post',[ProfileController ::class, 'store']) 
-// ->name('profile.post');
+ Route::post('/create_account_post',[LoginController ::class, 'store']) 
+ ->name('create_account_sskrurun');
 
+ Route::post('/login_account_post',[LoginController ::class, 'login']) 
+ ->name('login_sskrurun');
 
+ Route::post('/addinformation_post',[RunController ::class, 'store']) 
+ ->name('addinformation_post');
+
+ 
 
 Route::get('/create_account', function () {
 return view('create_account');
 });
 
-Route::get('/index', function () {
+Route::get('/showrun',[RunController ::class, 'index']);
+
+Route::get('/', function () {
     return view('index');
 })->name('button.index');
 
@@ -49,7 +58,7 @@ Route::get('/event', function () {
 
 Route::get('/loginsskrurun', function () {
     return view('loginsskrurun');
-});
+})->name('loginsskrurun');
 
 Route::get('/logout', function () {
     return view('logout');

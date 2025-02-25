@@ -14,8 +14,12 @@ return new class extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            // $table->string('phone');
-            $table->integer('age');
+            $table->string('username');
+            $table->string('password');
+            $table->date('dob');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('profilepic')->nullable();//ไม่ต้องใส่ก้ได้
             $table->timestamps();
         });
     }
